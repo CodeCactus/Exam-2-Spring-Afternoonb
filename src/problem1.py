@@ -1,7 +1,7 @@
 """
 Test 2, problem 1.
 
-Authors: Sriram Mohan and PUT_YOUR_NAME_HERE.
+Authors: Sriram Mohan, Dr. Brackin and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import simple_testing as st
