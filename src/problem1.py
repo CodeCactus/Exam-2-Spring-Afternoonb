@@ -18,6 +18,7 @@ def main():
 #   Do NOT copy code from this function.
 #
 # Instead, ** CALL ** this function as needed in the problems below.
+#
 ########################################################################
 def sum_of_digits(number):
     """
@@ -98,10 +99,6 @@ def problem1(sequence):
       then this function should return:
           1 + 0 + 4 + 3 + 1 + 0 + 0 + 1 + 1 + 9 + 5 + 0 + 0 + 0
       which is 25.
-    hint:
-        If you are trying to find the sum of digits of the number 104,
-        the first item in the sequence you can say
-        sum_of_digits(sequence[0])
     Type hints:
       :type: sequence: (int)
     """
@@ -110,6 +107,35 @@ def problem1(sequence):
     #     The testing code is already written for you (above).
     # 5 Points
     ####################################################################
+
+
+
+def twisted_sum_of_digits(n):
+    """
+    This modifies the sum of digits code to remove the integer '9'
+    from consideration in the sum of digits.
+    What comes in:  An integer.
+    What goes out:  The sum of the digits in the given integer,
+    UNLESS ONE OF THE DIGITS IS '9'.
+    Side effects:   None.
+    Example:
+      If the integer is 83135,
+      this function returns (8 + 3 + 1 + 3 + 5), which is 20.
+      If the integer is 9246
+      this function returns (2 + 4 + 6), which is 12
+    """
+    if n < 0:
+        n = -n
+
+    twisted_digit_sum = 0
+    while True:
+        if n == 0:
+            break
+        twisted_digit_sum = twisted_digit_sum + (n % 10)
+        n = n // 10
+
+    return twisted_digit_sum
+
 
 
 # ----------------------------------------------------------------------
