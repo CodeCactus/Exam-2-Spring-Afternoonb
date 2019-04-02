@@ -112,7 +112,7 @@ def problem1(sequence):
 
 def twisted_sum_of_digits(n):
     """
-    This modifies the sum of digits code to remove the integer '9'
+    You are to modify the sum of digits code to remove the integer '9'
     from consideration in the sum of digits.
     What comes in:  An integer.
     What goes out:  The sum of the digits in the given integer,
@@ -123,7 +123,17 @@ def twisted_sum_of_digits(n):
       this function returns (8 + 3 + 1 + 3 + 5), which is 20.
       If the integer is 9246
       this function returns (2 + 4 + 6), which is 12
+    The sum_of_digits code is copied below for your use.
+    If you understand the code, you will only need to change a few lines
+    You may want to wait until the end of the test to attempt this part
+    of problem 1.
     """
+    ####################################################################
+    # TODO: 3. Implement and test this function.
+    #     You will need to write your own test code.
+    # 5 Points
+    ####################################################################
+
     if n < 0:
         n = -n
 
