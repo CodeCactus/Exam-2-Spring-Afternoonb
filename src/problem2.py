@@ -2,7 +2,12 @@
 Test 2, problems 2a and 2b.
 
 Authors: Sriram Mohan and PUT_YOUR_NAME_HERE.  January 2016.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE. (-1 if you do NOT)
+####################################################################
+# TODO: 2. Commit and push this file- NOW.
+#          You will be penalized severely if you do NOT follow instructions
+# 1 Points
+####################################################################
 
 import math
 import simple_testing as st
@@ -157,9 +162,9 @@ def problem2a(points):
       :type points: Point
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # TODO: 3. Implement and test this function.
     #   We have written tests for you (above).
-    # 10 Points
+    # 9 Points
     # ------------------------------------------------------------------
 
 
@@ -362,7 +367,7 @@ def problem2b(points, my_point):
       :type my_point: Point
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # TODO: 4. Implement and test this function.
     #   We have written tests for you (above).
     # 5 Points
     #
@@ -371,7 +376,7 @@ def problem2b(points, my_point):
     #    **  For full credit you must use (call) appropriate
     #    **  method(s) defined in the Point that is defined above.
     # In my opinion, this is the most difficult problem on the test.
-    # Do NOT start this problem until you have problem 3.
+    # Do NOT start this problem until you have finished problem 3.
     ####################################################################
     # ------------------------------------------------------------------
 
