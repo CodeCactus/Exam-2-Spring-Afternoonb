@@ -159,7 +159,7 @@ def problem2a(points):
     # ------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #   We have written tests for you (above).
-    # 4 Points
+    # 10 Points
     # ------------------------------------------------------------------
 
 
@@ -370,6 +370,8 @@ def problem2b(points, my_point):
     # IMPORTANT:
     #    **  For full credit you must use (call) appropriate
     #    **  method(s) defined in the Point that is defined above.
+    # In my opinion, this is the most difficult problem on the test.
+    # Do NOT start this problem until you have problem 3.
     ####################################################################
     # ------------------------------------------------------------------
 
