@@ -5,9 +5,9 @@ Authors: CSSE Faculty, Dr. Brackin, and
          PUT_YOUR_NAME_HERE.  
          April, 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE. (-1 if you do not)
+"""  #me: 1. PUT YOUR NAME IN THE ABOVE LINE. (-1 if you do not)
 ####################################################################
-# TODO: 2. Commit and push this file- NOW.
+# getting there: 2. Commit and push this file- NOW.
 #          You will be penalized severely if you do NOT follow instructions
 # 1 Points
 ####################################################################
@@ -49,7 +49,6 @@ of the colons:
     The length of string 4 is: 6
     The length of string 5 is 13
     The letter 'e' occurs 2 times.
-    The maximum value in the sequence is:  4
     The new sequence is:
     [Hell6, my name, is Patsy, I wish, y6u G66d Luck]
     """
@@ -59,6 +58,39 @@ of the colons:
     #
     #14 Points
     # -------------------------------------------------------------------------
+    sequence = []
+    y = 1
+    while True:
+
+        print('Input string',y, end='')
+        x = str(input(':'))
+        if x != '-1':
+            sequence = sequence + [x]
+            y = y+1
+        else:
+            break
+    total_e = 0
+    old_sequence = ''
+    new_sequence = ''
+    for k in range(len(sequence)):
+        for j in range(len(sequence[k])):
+            old_sequence =old_sequence + str(sequence[k][j])
+            if sequence[k][j] == 'e':
+                total_e = total_e + 1
+            if sequence[k][j] == 'o':
+                new_sequence = new_sequence + str(6)
+            else:
+                new_sequence = new_sequence + str(sequence[k][j])
+        new_sequence = new_sequence + ' '
+        old_sequence = old_sequence + ' '
+    print("The sequence that you input is:")
+    print('[',old_sequence,']')
+    for k in range(len(sequence)):
+        print('The length of string', k+1, 'is: ',len(sequence[k]))
+
+    print("The letter 'e' occurs ",total_e,"times")
+    print('The new sequence is: ')
+    print(new_sequence)
 
     # -------------------------------------------------------------------------
     # TODO: 4. Be sure to commit and push your work.
@@ -66,5 +98,5 @@ of the colons:
     # -------------------------------------------------------------------------
 
 
-    main()
+main()
 

@@ -2,9 +2,9 @@
 Test 2, problem 1.
 
 Authors: Sriram Mohan, Dr. Brackin and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE. (-1 if you do not)
+"""  # me: 1. PUT YOUR NAME IN THE ABOVE LINE. (-1 if you do not)
 ####################################################################
-# TODO: 2. Commit and push this file- NOW.
+# done: 2. Commit and push this file- NOW.
 #          You will be penalized severely if you do NOT follow instructions
 # 1 Points
 ####################################################################
@@ -112,7 +112,7 @@ def problem1(sequence):
       :type: sequence: (int)
     """
     ####################################################################
-    # TODO: 2. Implement and test this function.
+    # done: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     # 9 Points
     ####################################################################
@@ -141,7 +141,7 @@ def twisted_sum_of_digits(n):
     of problem 1.
     """
     ####################################################################
-    # TODO: 3. Implement and test this function.
+    # done: 3. Implement and test this function.
     #     You will need to write your own test code.
     # This problem is more difficult - I suggest you try the other
     # problems before you do this.

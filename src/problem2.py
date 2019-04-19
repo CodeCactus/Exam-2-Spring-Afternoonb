@@ -2,9 +2,9 @@
 Test 2, problems 2a and 2b.
 
 Authors: Sriram Mohan and PUT_YOUR_NAME_HERE.  January 2016.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE. (-1 if you do NOT)
+"""  # hi: 1. PUT YOUR NAME IN THE ABOVE LINE. (-1 if you do NOT)
 ####################################################################
-# TODO: 2. Commit and push this file- NOW.
+# done: 2. Commit and push this file- NOW.
 #          You will be penalized severely if you do NOT follow instructions
 # 1 Points
 ####################################################################
@@ -166,6 +166,10 @@ def problem2a(points):
     #   We have written tests for you (above).
     # 9 Points
     # ------------------------------------------------------------------
+    total = 0
+    for k in range(len(points)):
+        total = total + points[k].x
+    return total
 
 
 def test_problem2b():
@@ -379,6 +383,13 @@ def problem2b(points, my_point):
     # Do NOT start this problem until you have finished problem 3.
     ####################################################################
     # ------------------------------------------------------------------
+    closest = points[0].distance_from(my_point)
+    index = 0
+    for k in range(1, len(points)):
+        if points[k].distance_from(my_point)< closest:
+            closest = points[k].distance_from(my_point)
+            index = k
+    return points[index]
 
 
 # ----------------------------------------------------------------------
