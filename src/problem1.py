@@ -15,6 +15,10 @@ import simple_testing as st
 def main():
     """ Calls the   TEST   functions in this module. """
     test_problem1()
+    print(twisted_sum_of_digits(234))
+    print(twisted_sum_of_digits(83135))
+    print(twisted_sum_of_digits(9246))
+    print(twisted_sum_of_digits(999))
 
 
 ########################################################################
@@ -112,7 +116,10 @@ def problem1(sequence):
     #     The testing code is already written for you (above).
     # 9 Points
     ####################################################################
-
+    total = 0
+    for k in range(len(sequence)):
+        total = total + sum_of_digits(sequence[k])
+    return total
 
 
 def twisted_sum_of_digits(n):
@@ -148,7 +155,8 @@ def twisted_sum_of_digits(n):
     while True:
         if n == 0:
             break
-        twisted_digit_sum = twisted_digit_sum + (n % 10)
+        if n%10 != 9:
+            twisted_digit_sum = twisted_digit_sum + (n % 10)
         n = n // 10
 
     return twisted_digit_sum
